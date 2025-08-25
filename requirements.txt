@@ -1,0 +1,24 @@
+# --extra-index-url: 기본 PyPI에 더하여, PyTorch 다운로드 사이트도 검색하도록 추가
+# --find-links: PyTorch Geometric의 종속 패키지를 찾기 위한 경로
+--extra-index-url https://download.pytorch.org/whl/cu124
+--find-links https://data.pyg.org/whl/torch-2.4.0+cu124.html
+
+# --- PyTorch Stack ---
+torch==2.4.0
+torchvision
+torchaudio
+
+# --- PyTorch Geometric Stack ---
+torch_geometric
+pyg_lib
+torch_scatter
+torch_sparse
+torch_cluster
+torch_spline_conv
+
+# --- Other Python Packages ---
+matplotlib
+seaborn
+tqdm
+tensorboardx
+selfies
